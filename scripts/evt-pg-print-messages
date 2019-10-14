@@ -1,7 +1,26 @@
 #!/usr/bin/env ruby
 
-root = File.expand_path '../database', __dir__
-script_filename = 'print-messages.sh'
-script_filepath = File.join root, script_filename
+# root = File.expand_path '../database', __dir__
+# script_filename = 'print-messages.sh'
+# script_filepath = File.join root, script_filename
 
-system script_filepath
+# system script_filepath
+
+require 'postgres_message_store'
+
+script_filename = 'print-messages.sh'
+PostgresMessageStore::Database::Scripts::Run.(script_filename)
+
+
+__END__
+
+- need to load postgres_message_store
+- need to have access to PostgresMessageStore namespace
+- need to load gem
+- where is gem installed
+- how do other libs load?
+  - it's done in lib loader and load_path
+
+how to test a bundler executable
+- need to run one
+- it loads postgres_message_store
