@@ -3,7 +3,7 @@
 set -e
 
 echo
-echo "Importing Database Scripts to ./database"
+echo "Symlinking Database Scripts to ./database"
 echo "= = ="
 
 if [ -z ${PROJECTS_HOME+x} ]; then
@@ -24,8 +24,8 @@ echo
 echo "Removing database directory (./database)"
 rm -rf ./database
 
-echo "Copying database scripts from $database_source"
-cp -a $database_source ./database
+echo "Symlinking database scripts from $database_source"
+ln -s $database_source ./database
 
 echo
 echo '- - -'
