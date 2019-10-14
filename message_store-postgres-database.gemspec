@@ -13,8 +13,4 @@ Gem::Specification.new do |s|
   s.files = Dir.glob('{database}/**/*')
   s.executables = Dir.glob('scripts/evt-*').map(&File.method(:basename))
   s.bindir = 'scripts'
-
-  s.add_dependency 'postgres_message_store'
-
-  s.add_development_dependency 'test_bench'
 end
