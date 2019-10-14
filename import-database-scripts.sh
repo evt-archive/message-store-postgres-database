@@ -11,7 +11,7 @@ if [ -z ${PROJECTS_HOME+x} ]; then
   exit
 fi
 
-default_database_source="$PROJECTS_HOME/postgres-message-store-database/database"
+default_database_source="$PROJECTS_HOME/postgres-message-store/database"
 if [ -z ${DATABASE_SOURCE+x} ]; then
   echo "(DATABASE_SOURCE is not set. Default will be used.)"
   database_source=$default_database_source
