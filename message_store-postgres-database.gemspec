@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.name = 'evt-message_store-postgres-database'
   s.version = '1.1.0.1'
-  s.summary = 'Message store PostgreSQL database definition'
+  s.summary = 'Database definition and tools for PostgreSQL message store'
   s.description = ' '
 
   s.authors = ['The Eventide Project']

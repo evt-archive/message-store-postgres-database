@@ -1,6 +1,6 @@
 # message_store-postgres-database
 
-Message store PostgreSQL database definition
+Database definition and tools for PostgreSQL message store
 
 ## Documentation
 
