@@ -1,3 +1,7 @@
+# Archived Repository
+
+This repository has been decommissioned. It's inactive and remains for archival and reference purposes. The message_store-postgres-database repository has been superseded by [Message DB](https://github.com/message-db/message-db).
+
 # message_store-postgres-database
 
 Database definition and tools for PostgreSQL message store
